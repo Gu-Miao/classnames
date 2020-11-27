@@ -1,6 +1,10 @@
 import isPlainObject from './utils/isPlainObject.ts'
 
-export default function classNames(...classNames:any[]) {
+/**
+ * @param {any[]} classNames Classes to be concat.
+ * @returns {string} Class string.
+ */
+export default function classNames(...classNames:any[]):string {
   const classSet = new Set()
   for (let className of classNames) {
     if (!className && className !== 0) continue
