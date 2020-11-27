@@ -1,6 +1,6 @@
 # classnames
 
-A simple implement of classname on deno. This lib is only support by deno, if you want to use it in Node.js/Browser, please see [this](https://github.com/JedWatson/classnames).
+A simple implement of concating classnames. This lib is only support for [Deno](https://deno.land/), if you want to use it in Node.js/Browser, please see [this](https://github.com/JedWatson/classnames).
 
 ## Usage
 
@@ -19,7 +19,9 @@ classNames("foo", { bar: true, duck: false }, "baz", { quux: true }); // => 'foo
 classNames(null, false, "bar", undefined, 0, 1, { baz: null }, ""); // => 'bar 1'
 ```
 
-> The usage of this function is similar with [classnames](https://github.com/JedWatson/classnames#usage), different is we use `Set` to remove the repetition so that there is no `dedupe` version. And no `bind` function support yet.
+> The usage of this function is similar with [classnames](https://github.com/JedWatson/classnames#usage), the different is we use `Set` to remove the repetition so that there is no `dedupe` version.
+
+> No `bind` function for CSS Moduless support yet.
 
 ## License
 
