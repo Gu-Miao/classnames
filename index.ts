@@ -1,8 +1,8 @@
 import isPlainObject from './utils/isPlainObject.ts'
 
-export default function classNames() {
+export default function classNames(...classNames:any[]) {
   const classSet = new Set()
-  for (let className of arguments) {
+  for (let className of classNames) {
     if (!className && className !== 0) continue
 
     if (typeof className === 'string') {
