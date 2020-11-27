@@ -1,4 +1,4 @@
-import isPlainObject from './utils/isPlainObject.js'
+import isPlainObject from './utils/isPlainObject.ts'
 
 export default function classNames() {
   const classSet = new Set()
